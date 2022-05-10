@@ -6,7 +6,7 @@ fs.readFile('archivo_a_leer.txt', 'utf8', (err, data) => {
     console.error(err);
     return;
   }
-  console.log(F(data));
+  console.log(`F(${data}) = ${F(data)}`);
 });
 
 function F(n){
